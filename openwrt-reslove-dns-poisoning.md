@@ -106,9 +106,34 @@ wget --no-check-certificate https://raw.githubusercontent.com/felixonmars/dnsmas
 0 4 * * 3 /etc/init.d/pcap_dnsproxy restart /* 每周三 4:00 重启 pcap-dnsproxy */
 ```
 
+## 端口监听
+
+有的时候 Pcap 会崩溃导致 DNS 解析失败，所以需要有一个  Cron 来对它进行监测。
+
+按更新 Dnsmasq 的方法建立 `pcap.sh` 文件
+
+```
+#!/bin/sh
+
+netstat -nl | grep 1053
+
+if [ $? -ne 0 ]
+then
+  /etc/init.d/pcap-dnsproxy restart
+fi
+```
+
+并在计划任务添加：
+
+```
+*/1 * * * * pcap.sh
+```
+
+这个脚本会每隔一分钟检查 Pcap 的监听端口是否存在，如果不存在就重启 Pcap 进程。
+
 ### Over
 
 ## 参考资料
 
-- [OpenWRT路由器unbound+dnsmasq解决DNS污染与劫持](https://cokebar.info/archives/246)
+- [OpenWRT 路由器 unbound+dnsmasq 解决 DNS 污染与劫持](https://cokebar.info/archives/246)
 - [openwrt 上通过 pdnsd 和 dnsmasq 解决 dns 污染](https://wido.me/sunteya/use-openwrt-resolve-gfw-dns-spoofing)
