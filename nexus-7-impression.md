@@ -22,6 +22,8 @@ tags:
 
 ![Nexus 7](https://c6.staticflickr.com/9/8398/29526151133_fc5fbb9383_k.jpg)
 
+<!--more-->
+
 ## 系统
 
 ![About](https://c7.staticflickr.com/6/5270/29859530710_2e06002a02_h.jpg)

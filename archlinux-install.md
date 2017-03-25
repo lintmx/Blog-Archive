@@ -21,6 +21,8 @@ $ ping -c 4 www.lintmx.com
 
 Ps: 锐捷用户应事先准备 `mentohust` 。
 
+<!--more-->
+
 ## 更新系统时间
 
 启动 `systemd-timesyncd` 服务用于同步时间。

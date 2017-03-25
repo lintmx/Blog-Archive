@@ -19,6 +19,8 @@ tags:
 以及对 DNSCurve/DNSCrypt 协议、并行和 TCP 协议请求的支持。
 多服务器并行请求功能，更可提高在恶劣网络环境下域名解析的可靠性。
 
+<!--more-->
+
 ### 下载安装
 [OpenWrt 编译](https://github.com/wongsyrone/openwrt-Pcap_DNSProxy/tree/prebuilt-ipks)
 

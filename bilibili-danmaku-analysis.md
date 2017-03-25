@@ -22,6 +22,8 @@ B 站提供了一系列 [API](http://docs.bilibili.cn/wiki) 方便开发者开�
 
 [备用地址](http://www.fuckbilibili.com/biliapi.html)
 
+<!--more-->
+
 2、播放页面。
 -----------------
 
