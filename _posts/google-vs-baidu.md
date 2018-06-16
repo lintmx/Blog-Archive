@@ -11,9 +11,9 @@ tags:
 
 <!--more-->
 
-![Google](https://farm1.staticflickr.com/473/20363928666_d3d43163cf_o.png)
+![Google](https://i.loli.net/2018/06/16/5b252e96ded79.png)
 
-![Baidu](https://farm1.staticflickr.com/378/19769245413_913fe4c190_o.png)
+![Baidu](https://i.loli.net/2018/06/16/5b252e96daa91.png)
 
 <br />
 

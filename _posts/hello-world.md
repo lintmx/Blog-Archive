@@ -66,4 +66,4 @@ tags:
 
 Niconiconi~
 
-![niconiconi](https://farm4.staticflickr.com/3665/19607707073_7fb48da3cf_o.jpg)
+![niconiconi](https://i.loli.net/2018/06/16/5b252deec4853.jpg)

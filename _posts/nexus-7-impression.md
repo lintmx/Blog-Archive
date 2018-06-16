@@ -20,13 +20,13 @@ tags:
 ~~店家简介写的很清楚是全新才有包装然而我没看清楚~~，
 不过设备看起来确实挺新的，基本没什么使用痕迹~~后面 Logo 处能隐约看见一道圈，感觉是展示用机~~。
 
-![Nexus 7](https://c6.staticflickr.com/9/8398/29526151133_fc5fbb9383_k.jpg)
+![Nexus 7](https://i.loli.net/2018/06/16/5b252deee62d8.jpg)
 
 <!--more-->
 
 ## 系统
 
-![About](https://c7.staticflickr.com/6/5270/29859530710_2e06002a02_h.jpg)
+![About](https://i.loli.net/2018/06/16/5b252deec9e3f.jpg)
 
 店家寄过来时已经刷好了 Marshmallow ，我本来想刷成 CyanogenMod 13 的，
 这样可以用 CM 自带的 root 管理~~不是很相信被中国公司收购的SuperSU~~。
@@ -34,7 +34,7 @@ tags:
 [冰箱](https://play.google.com/store/apps/details?id=com.catchingnow.icebox)
 来管理，那不 root 也能符合我日常需求。索性用官方镜像刷了一遍后作罢。
 
-![Desktop](https://c6.staticflickr.com/6/5005/29526147933_07e0e9606a_h.jpg)
+![Desktop](https://i.loli.net/2018/06/16/5b252deecbd66.jpg)
 
 作为一个 Material Design 支持者，原生 Android 的 UI 比那些乱改的国产 ROM 不知道高到哪里去了，
 配上

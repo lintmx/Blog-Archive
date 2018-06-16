@@ -250,4 +250,4 @@ Arch Linux 的安装虽然有些麻烦，但也有一些诀窍：
 
 以及
 
-![Fuck Nvidia](https://farm2.staticflickr.com/1617/24855924622_982b91bebe_o.jpg)
+![Fuck Nvidia](https://i.loli.net/2018/06/16/5b252deece078.jpg)
