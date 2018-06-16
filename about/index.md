@@ -1,8 +1,9 @@
 ---
 title: 关于
+date: 1995-11-07
 ---
 
-# Who
+## Who
 
 一个 ~~大专生~~ 敲代码的，靠 ~~世界最好的语言~~ 吃饭。
 
@@ -34,7 +35,7 @@ title: 关于
 
 - 目前沉迷 [PS4](https://psnine.com/psnid/lintmx)
 
-# Contact
+## Contact
 
 - [lintmx#gmail.com](mailto:lintmx@gmail.com)
 
@@ -44,7 +45,7 @@ title: 关于
 
 - [GitHub](https://github.com/lintmx)
 
-# GPG
+## GPG
 
 - 指纹： `1007 AFC0 E724 0DB1 7FF1  740F 5A0C 75DB 2658 C0EF` 
 
@@ -60,13 +61,13 @@ gpg --fetch-keys https://keybase.io/lintmx/pgp_keys.asc
 gpg --keyserver hkp://pgp.mit.edu --recv-key 1007AFC0E7240DB17FF1740F5A0C75DB2658C0EF
 ```
 
-# Links
+## Links
 
 - [Gorgias'Blog](https://gorgias.me/)
 
 - [Tcrxaz](https://tcrxaz.com/)
 
-# License
+## License
 
 原创文章默认采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
 
