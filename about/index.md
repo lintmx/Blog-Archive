@@ -35,6 +35,8 @@ date: 1995-11-07
 
 - 目前沉迷 [PS4](https://psnine.com/psnid/lintmx)
 
+- 刚一 NS : SW-2829-1531-9696
+
 ## Contact
 
 - [lintmx#gmail.com](mailto:lintmx@gmail.com)
