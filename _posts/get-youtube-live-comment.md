@@ -12,6 +12,8 @@ tags:
 
 开始动手后，发现 B 站的视频流和弹幕是真的好拿，网上也是一堆解析文章，但 YouTube 就没这么方便了，视频流在 [youtube-dl](https://github.com/ytdl-org/youtube-dl) 里找到了方法，评论网上只能找到使用 YouTube API 的方法，所以最后还是请出 Chrome 的 F12 大法。
 
+<!-- more -->
+
 ## 分析
 
 一般的视频网站的弹幕用的都是 WebSocket (HTML5 播放器)，但 YouTube 真的是有钱任性，直接用 ajax 按时请求服务器。
