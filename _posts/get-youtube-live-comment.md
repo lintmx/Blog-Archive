@@ -49,7 +49,7 @@ tags:
 
 ### 获取弹幕
 
-带上 `UserAgent` 和入口请求下发的 Cookie 请求 `https://www.youtube.com/live_chat/get_live_chat?continuation=continuation&pbj=1` 可以获取一段 JSON。
+带上 `UserAgent` ~~和入口请求下发的 Cookie (update:不带也能正常获取？迷惑)~~请求 `https://www.youtube.com/live_chat/get_live_chat?continuation=continuation&pbj=1` 可以获取一段 JSON。
 
 ```JSON
 {
