@@ -1,10 +1,8 @@
 ---
-title: Arch Linux 的安装与配置
-date: 2016-02-11 14:00:00
-tags: 
-    - Arch
-    - Linux
-    - 双系统
+title: "Arch Linux 的安装与配置"
+date: 2016-02-11T14:00:00+08:00
+tags: ["Arch", "Linux", "双系统"]
+draft: false
 ---
 
 利用放假在家不被锐捷的~~喂屎~~限制的时间，好好的折腾了一下 Arch Linux ，不得不说它足够简洁，优雅，并且定制性高，对喜欢折腾的人来说简直赛高！不过缺点也明显，对新手极度不友好，安装时没有提供图形界面，就算是老手也难免需要查 [Wiki](https://wiki.archlinux.org/) ，所以记录一下安装配置过程方便以后重装。
@@ -43,12 +41,12 @@ Ps: 锐捷用户应事先准备 `mentohust` 。
 
 ```
 NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
-sda      8:0    0 238.5G  0 disk 
-├─sda1   8:1    0   450M  0 part 
+sda      8:0    0 238.5G  0 disk
+├─sda1   8:1    0   450M  0 part
 ├─sda2   8:2    0   100M  0 part /boot/efi
-├─sda3   8:3    0    16M  0 part 
+├─sda3   8:3    0    16M  0 part
 └─sda4   8:4    0 237.9G  0 part /run/media/lintmx/Windows
-sdb      8:16   0 119.2G  0 disk 
+sdb      8:16   0 119.2G  0 disk
 └─sdb1   8:17   0 119.2G  0 part /
 ```
 
@@ -82,7 +80,7 @@ sdb      8:16   0 119.2G  0 disk
 
 ```bash
 # pacstrap /mnt base base-devel
-``` 
+```
 
 ## 配置基本系统
 

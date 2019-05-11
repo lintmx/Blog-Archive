@@ -1,10 +1,7 @@
 ---
-title: 在 OpenWrt 上解决 DNS 污染
-date: 2016-07-22 16:04:01
-tags:
-  - OpenWrt
-  - Pcap_DNSProxy
-  - Dnsmasq
+title: "在 OpenWrt 上解决 DNS 污染"
+date: 2016-07-22T16:04:01+08:00
+tags: ["OpenWrt", "Pcap_DNSProxy", "Dnsmasq"]
 ---
 
 因为某些原因需要解决 DNS 污染问题，本来打算用 Pdnsd + Dnsmasq 组合的，
@@ -13,7 +10,7 @@ tags:
 
 ## Pcap_DNSProxy 的安装与配置
 
-> [Pcap_DNSProxy](https://github.com/chengr28/Pcap_DNSProxy) 
+> [Pcap_DNSProxy](https://github.com/chengr28/Pcap_DNSProxy)
 是一个基于 WinPcap/LibPcap 用于过滤 DNS 投毒污染的工具，
 提供支持正则表达式的 Hosts 提供更便捷和强大的修改 Hosts 的方法，
 以及对 DNSCurve/DNSCrypt 协议、并行和 TCP 协议请求的支持。
@@ -59,7 +56,7 @@ Dnsmasq 属于 OpenWrt 自带软件，
 所以我们只需要修改它的配置文件，让它将国内域名解析指向国内的 DNS ，
 国外的其余的指向 Pcap_DNSProxy 的监听端口就好了。
 
-根据自己的需求和实际修改 Dnsmasq 的配置文件 
+根据自己的需求和实际修改 Dnsmasq 的配置文件
 `/etc/dnsmasq.conf` 如下：
 
 ```

@@ -1,11 +1,10 @@
 ---
 title: 关于
-date: 1995-11-07
 ---
 
 ## Who
 
-一个 ~~大专生~~ 敲代码的，靠 ~~世界最好的语言~~ 吃饭。
+一个 ~~大专生~~ 敲代码的，靠 ~~世界最好的语言~~ 吃饭 (DD glang 中)。
 
 - 强迫症患者
 
@@ -17,9 +16,11 @@ date: 1995-11-07
 
 - ~~Arch Linux~~ macOS 用户
 
-- Google 接近脑残粉
+- ~~Google 接近脑残粉~~
 
-- Sony 接近脑残粉
+- ~~Sony 接近脑残粉~~
+
+- Apple 三件套
 
 - BAT 接近脑残黑
 
@@ -28,6 +29,8 @@ date: 1995-11-07
 - 喜欢看动画
 
 - μ's 一番大好き
+
+- MeAqua てぇてぇ
 
 - 坚持点 [格子](https://bgm.tv/user/lintmx)
 
@@ -49,7 +52,7 @@ date: 1995-11-07
 
 ## GPG
 
-- 指纹： `1007 AFC0 E724 0DB1 7FF1  740F 5A0C 75DB 2658 C0EF` 
+- 指纹： `1007 AFC0 E724 0DB1 7FF1  740F 5A0C 75DB 2658 C0EF`
 
 - KeyBase: [https://keybase.io/lintmx](https://keybase.io/lintmx)
 

@@ -1,9 +1,7 @@
 ---
-title: 抓取 YouTube 直播评论
-date: 2019-04-19 22:43:00
-tags: 
-    - YouTube Live
-    - Comment
+title: "抓取 YouTube 直播评论"
+date: 2019-04-19T22:43:00+08:00
+tags: ["YouTube Live", "Comment"]
 ---
 
 ## 起因
@@ -43,7 +41,7 @@ tags:
 
 其中 `continuation` 就是下一个请求的 Token， 而 `timeoutMs` 是下个请求需间隔的毫秒数。
 
-> 经测试 videoId 中带下划线的直播 `invalidationContinuationData` 要替换成 `timedContinuationData` 
+> 经测试 videoId 中带下划线的直播 `invalidationContinuationData` 要替换成 `timedContinuationData`
 
 拿到 `continuation` 后就可以开始循环请求 ~~无限 For 制~~ 了。
 

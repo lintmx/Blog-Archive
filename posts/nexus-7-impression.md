@@ -1,10 +1,7 @@
 ---
-title: Nexus 7 (2013) 体验
-date: 2016-10-07 00:15:01
-tags:
-  - Google
-  - Nexus
-  - Android
+title: "Nexus 7 (2013) 体验"
+date: 2016-10-07T00:15:01+08:00
+tags: ["Google", "Nexus", "Android"]
 ---
 
 本来想弄个两三百的寨板来看直播，不过在某宝上发现二手的 Nexus 只要六百顿时就心动了，

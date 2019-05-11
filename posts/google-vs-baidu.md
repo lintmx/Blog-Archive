@@ -1,10 +1,7 @@
 ---
-title: Google 和 Baidu 的对比
-date: 2015-08-08 15:07:59
-tags:
-  - Baidu
-  - GitHub
-  - Google
+title: "Google 和 Baidu 的对比"
+date: 2015-08-08T15:07:59+08:00
+tags: ["Baidu", "GitHub", "Google"]
 ---
 
 今天在玩一个梗的时候突然脑洞大开，把 `g I t H u b . c O m` 在 Google 和 Baidu 里搜索了一下，发现个有趣的结果：
