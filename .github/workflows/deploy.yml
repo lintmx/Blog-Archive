@@ -1,0 +1,51 @@
+name: Deploy Blog
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Blog repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+          
+      - name: New Hugo Site
+        run: hugo new site Blog
+      
+      - name: Copy file
+        run: |
+          cp -rf content Blog
+          cp -rf static Blog
+          cp -f config.toml Blog
+
+      - name: Checkout Theme repo
+        uses: actions/checkout@v2
+        with:
+          repository: lintmx/hugo-theme-tiny
+          path: Blog/themes/tiny
+
+      - name: Build
+        working-directory: ./Blog
+        run: hugo --minify
+
+      - name: deploy to server
+        uses: AEnterprise/rsync-deploy@v1.0
+        env:
+          DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: "-e -c -r --delete"
+          SERVER_PORT: ${{ secrets.SERVER_PORT }}
+          FOLDER: "./Blog/public"
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+          USERNAME: ${{ secrets.USERNAME }}
+          SERVER_DESTINATION: ${{ secrets.SERVER_DESTINATION }}
