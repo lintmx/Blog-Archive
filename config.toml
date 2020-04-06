@@ -1,0 +1,37 @@
+baseURL = "https://lintmx.com/"
+languageCode = "zh"
+title = "Otakone"
+theme = "tiny"
+enableRobotsTXT = true
+hasCJKLanguage = true
+disableKinds = ["taxonomyTerm"]
+
+[mediaTypes]
+    [mediaTypes."application/atom"]
+        suffixes = ["xml"]
+    [mediaTypes."application/rss"]
+        suffixes = ["xml"]
+
+[outputFormats]
+    [outputFormats.Atom]
+        mediaType = "application/atom"
+        baseName = "atom"
+    [outputFormats.Rss]
+        mediaType = "application/rss"
+        baseName = "feed"
+
+[outputs]
+    home = ["HTML", "Atom", "Rss"]
+    page = ["HTML"]
+    section = ["HTML"]
+    taxonomy = ["HTML"]
+
+[params]
+    authorName = "Leo Stock"
+    email = "lintmx@gmail.com"
+    description = "Just a Otaku"
+    themeColor = "#BBBBBB"
+    favicon = "/fav.ico"
+    logo = "/logo.svg"
+    hostName = "Vultr"
+    hostURL = "https://www.vultr.com/?ref=6861540"
