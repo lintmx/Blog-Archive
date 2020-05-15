@@ -1,10 +1,15 @@
 baseURL = "https://lintmx.com/"
 languageCode = "zh"
 title = "Otakone"
-theme = "tiny"
+theme = "archie"
 enableRobotsTXT = true
 hasCJKLanguage = true
 disableKinds = ["taxonomyTerm"]
+copyright = "© Leo Stock"
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
 [mediaTypes]
     [mediaTypes."application/atom"]
@@ -27,11 +32,34 @@ disableKinds = ["taxonomyTerm"]
     taxonomy = ["HTML"]
 
 [params]
-    authorName = "Leo Stock"
-    email = "lintmx@gmail.com"
-    description = "Just a Otaku"
-    themeColor = "#BBBBBB"
-    favicon = "/fav.ico"
-    logo = "/logo.svg"
-    hostName = "Vultr"
-    hostURL = "https://www.vultr.com/?ref=6861540"
+	mode="auto" # color-mode → light,dark or auto
+	featherIconsCDN=true
+
+# Social Tags
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/lintmx"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/lintmx"
+
+# Main menu Items
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3

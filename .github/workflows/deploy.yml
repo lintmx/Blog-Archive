@@ -19,10 +19,10 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-          
+
       - name: New Hugo Site
         run: hugo new site Blog
-      
+
       - name: Copy file
         run: |
           cp -rf content Blog
@@ -32,8 +32,8 @@ jobs:
       - name: Checkout Theme repo
         uses: actions/checkout@v2
         with:
-          repository: lintmx/hugo-theme-tiny
-          path: Blog/themes/tiny
+          repository: athul/archie
+          path: Blog/themes/archie
 
       - name: Build
         working-directory: ./Blog
