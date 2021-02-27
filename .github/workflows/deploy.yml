@@ -9,43 +9,37 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Blog repo
+      - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          fetch-depth: 1
+          node-version: '14'
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-          extended: true
-
-      - name: New Hugo Site
-        run: hugo new site Blog
-
-      - name: Copy file
+      - name: Setup Hexo
         run: |
-          cp -rf content Blog
-          cp -rf static Blog
-          cp -f config.toml Blog
+          npm install -g hexo-cli
+          npm install
 
-      - name: Checkout Theme repo
+      - name: Setup themes
         uses: actions/checkout@v2
         with:
-          repository: athul/archie
-          path: Blog/themes/archie
+          repository: 'ahonn/hexo-theme-even'
+          path: 'themes/even'
 
-      - name: Build
-        working-directory: ./Blog
-        run: hugo --minify
+      - name: Generate
+        run: |
+          hexo clean
+          hexo generate
 
-      - name: deploy to server
+      - name: Deploy to server
         uses: AEnterprise/rsync-deploy@v1.0
         env:
           DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
           ARGS: "-e -c -r --delete"
           SERVER_PORT: ${{ secrets.SERVER_PORT }}
-          FOLDER: "./Blog/public"
+          FOLDER: "./public"
           SERVER_IP: ${{ secrets.SERVER_IP }}
           USERNAME: ${{ secrets.USERNAME }}
           SERVER_DESTINATION: ${{ secrets.SERVER_DESTINATION }}
