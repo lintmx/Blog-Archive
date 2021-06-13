@@ -25,8 +25,8 @@ jobs:
       - name: Setup themes
         uses: actions/checkout@v2
         with:
-          repository: 'ahonn/hexo-theme-even'
-          path: 'themes/even'
+          repository: 'lintmx/hexo-theme-tiny'
+          path: 'themes/tiny'
 
       - name: Generate
         run: |
